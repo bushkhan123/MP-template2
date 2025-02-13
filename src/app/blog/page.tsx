@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaCalendar, FaUserLarge } from 'react-icons/fa6';
 import { GiWoodenChair } from 'react-icons/gi';
 import Header from '../components/header';
-import Page from "../components/Ourpage"
+import Page from '../components/Ourpage';
 import Field from '../components/Feild';
 
 function Blog() {
@@ -12,16 +12,15 @@ function Blog() {
         <div className="max-w-screen-2xl container mx-auto pb-8 px-4">
             {/* Header Section */}
             <div className="bg-[#faf4f4]">
-                <Header />
+                {/* <Header /> */}
             </div>
-
             {/* Banner Section */}
             <div className="relative text-black">
                 <Image
-                    src="/blog.jpg" // Replace with the correct image file path
+                    src="/cha7.jpg" // Replace with the correct image file path
                     alt="Shop Banner"
-                    height={100}
-                    width={200}
+                    height={400}
+                    width={600}
                     className="w-full h-[200px] md:h-auto object-cover"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -43,9 +42,9 @@ function Blog() {
   <div className="mt-8 w-full lg:w-3/4 gap-6">
     {/* Single Blog Post */}
     {[
-      { image: "/p4.jpeg", title: "Going all-in with millennial design", category: "Crafts", date: "01 Jan 2023" },
-      { image: "/p3.jpeg", title: "Exploring new ways of decorating", category: "Design", date: "15 Mar 2023" },
-      { image: "/p6.jpeg", title: "Handmade pieces that took time to make", category: "Wood", date: "20 Sep 2023" },
+      { image: "/cha10.jpeg", title: "Going all-in with millennial design", category: "Crafts", date: "01 Jan 2023" },
+      { image: "/cha12.jpeg", title: "Exploring new ways of decorating", category: "Design", date: "15 Mar 2023" },
+      { image: "/cha13.jpg", title: "Handmade pieces that took time to make", category: "Wood", date: "20 Sep 2023" },
     ].map((post, index) => (
       <div key={index} className="bg-white p-4 rounded-lg transition-shadow">
         <Image
@@ -110,11 +109,11 @@ function Blog() {
       <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
       <div className="space-y-6">
         {[
-          { image: '/p2.jpeg', title: 'Going all-in with millennial design', date: '03 Aug 2022' },
-          { image: '/p5.jpeg', title: 'Exploring new ways of decorating', date: '03 Aug 2022' },
-          { image: '/p6.jpeg', title: 'Handmade pieces that took time to make', date: '03 Aug 2022' },
-          { image: '/p1.jpeg', title: 'Modern home in Milan', date: '03 Aug 2022' },
-          { image: '/p7.jpeg', title: 'Colorful office redesign', date: '03 Aug 2022' },
+          { image: '/cha14.jpg', title: 'Going all-in with millennial design', date: '13 Aug 2022' },
+          { image: '/p5.jpeg', title: 'Exploring new ways of decorating', date: '13 Aug 2022' },
+          { image: '/p2.jpeg', title: 'Handmade pieces that took time to make', date: '13 Aug 2022' },
+          { image: '/cha16.avif', title: 'Modern home in Milan', date: '13 Aug 2022' },
+          { image: '/cha15.jpeg', title: 'Colorful office redesign', date: '13 Aug 2022' },
         ].map((post, index) => (
           <div key={index} className="flex space-x-3">
             <Image src={post.image} height={100} width={100} alt="" />
@@ -131,7 +130,6 @@ function Blog() {
 
 
             <div className='justify-center mx-auto text-center'>
-
                 <Page />
                 <Field />
             </div>

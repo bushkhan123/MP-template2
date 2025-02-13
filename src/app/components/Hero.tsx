@@ -3,12 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import { IoTimeOutline } from 'react-icons/io5';
 import { CiCalendar } from 'react-icons/ci';
-import Header from './header';
 
 function Hero() {
     return (
-        <div className="bg-[#fbebb5]  mx-auto  w-full">
-            <Header />
+        <div className="bg-[#e0d3d3]  mx-auto  w-full">
             <div className="flex flex-col  md:mx-36 justify-around md:flex-row max-w-screen-2xl  p-20">
                 {/* Text Content */}
                 <div className=" my-auto text-center md:text-left">
@@ -21,7 +19,7 @@ function Hero() {
                 {/* Image Section */}
                 <div className="mt-6 md:mt-0">
                     <Image
-                        src="/hero.jpg"
+                        src="/he.jpg"
                         height={600}
                         width={600}
                         alt="A stylish rocket single seater"
@@ -52,7 +50,7 @@ function Hero() {
                             width={500}
                             src='/hero2.jpeg'
                         />
-                        <h3 className='text-3xl font-medium'>Side sofa</h3>
+                        <h3 className='text-3xl font-medium'>Side table</h3>
                         <Link href='/'>
                             <p className="text-xl mt-8 underline underline-offset-8 text-black-600 ">View More</p>
                         </Link>
@@ -71,10 +69,10 @@ function Hero() {
                     <div className="flex flex-wrap justify-center md:justify-start  gap-6 ">
                         {/* Product Item */}
                         {[
-                            { src: '/hero3.jpeg', name: 'Trenton modular sofa_3', price: 'Rs. 25,000.00' },
+                            { src: '/cha4.jpg', name: 'Trenton modular sofa_3', price: 'Rs. 25,000.00' },
                             { src: '/hero4.jpeg', name: 'Granite dining table with dining chair', price: 'Rs. 25,000.00' },
                             { src: '/hero5.jpeg', name: 'Outdoor bar table and stool', price: 'Rs. 25,000.00' },
-                            { src: '/hero6.jpeg', name: 'Plain console with teak', price: 'Rs. 25,000.00' },
+                            { src: '/cha2.jpeg', name: 'Plain console with teak', price: 'Rs. 25,000.00' },
                         ].map((item, index) => (
                             <div key={index} className="flex flex-col text-left mx-auto h-[300px] w-[350px] ">
                                 <Image
@@ -94,11 +92,11 @@ function Hero() {
                 </div>
 
             </div>
-            <div className="flex flex-col bg-[#fff9e5] justify-around md:flex-row max-w-screen-2xl  p-3">
+            <div className="flex flex-col bg-[#e0d3d3] justify-around md:flex-row max-w-screen-2xl  p-3">
                 {/* Image Section */}
                 <div className="mt-6 md:mt-0 md:ml-10">
                     <Image
-                        src="/hero7.jpeg"
+                        src="/asgar.avif"
                         height={900}
                         width={900}
                         alt="A stylish rocket single seater"
@@ -129,9 +127,9 @@ function Hero() {
                 <div className='flex gap-0 mx-10 flex-wrap justify-center'>
                     <div className='mx-auto text-center mb-10 sm:mb-5'>
                         <Image
-                            src="/bd2.jpg"
+                            src="/cha12.jpeg"
                             height={450}
-                            width={400}
+                            width={450}
                             alt="A stylish rocket single seater"
                             className="rounded-lg"
                         />
@@ -151,7 +149,7 @@ function Hero() {
 
                     <div className='mx-auto text-center mb-10 sm:mb-5'>
                         <Image
-                            src="/bd.jpg"
+                            src="/cha13.jpg"
                             height={450}
                             width={450}
                             alt="A stylish rocket single seater"
@@ -173,9 +171,9 @@ function Hero() {
 
                     <div className='mx-auto text-center mb-10 sm:mb-5'>
                         <Image
-                            src="/bd3.jpg"
-                            height={400}
-                            width={400}
+                            src="/cha9.jpg"
+                            height={450}
+                            width={450}
                             alt="A stylish rocket single seater"
                             className="rounded-lg"
                         />

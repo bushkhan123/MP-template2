@@ -40,7 +40,7 @@ function AsgaardSofa() {
                         ))}
                     </div>
                     <Image
-                        src="/shop.jpeg"
+                        src="/cha5.jpg"
                         alt="Main Sofa Image"
                         height={500}
                         width={400}
@@ -91,9 +91,11 @@ function AsgaardSofa() {
                             <span>1</span>
                             <button>+</button>
                         </div>
-                        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-opacity-90">
-                            Add To Cart
+                        <Link href="/viewcart">
+                        <button className="bg-primary text-black px-6 py-2 rounded hover:bg-opacity-90">
+                        Add To Cart
                         </button>
+                        </Link>
                     </div>
 
                     <hr className="my-6" />

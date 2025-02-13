@@ -8,13 +8,13 @@ function CheackOut() {
     return (
         <div className="max-w-screen-2xl container mx-auto pb-8 px-4">
             <div className='bg-[#faf4f4]'>
-                <Header />
+                {/* <Header /> */}
             </div>
 
             {/* Banner Section */}
             <div className="relative text-black">
                 <Image
-                    src="/shop.jpeg" // Replace with the correct image file path
+                    src="/sh9.webp" // Replace with the correct image file path
                     alt="Shop Banner"
                     height={400}
                     width={1600}
@@ -133,8 +133,7 @@ function CheackOut() {
             <label htmlFor="cod" className="text-md">Cash On Delivery</label>
         </div>
         <p className="text-sm text-gray-600 mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at arcu at eros malesuada facilisis.</p>
-
-        <button className="mt-6 border border-black py-3 px-14 rounded-xl">Place Order</button>
+        <Link href={'/shop'}><button className="mt-6 border border-black py-3 px-14 rounded-xl">Place Order</button></Link>
     </div>
 </div>
 

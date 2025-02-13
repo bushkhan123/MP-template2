@@ -46,7 +46,7 @@ function AsgaardSofa() {
           {/* Center: Big Image */}
           <div className="flex-1">
             <Image
-              src="/hero7.jpeg"
+              src="/asgar.avif"
               alt="Main Sofa Image"
               height={500}
               width={500}
@@ -103,10 +103,12 @@ function AsgaardSofa() {
                 <button aria-label="Decrease quantity">-</button>
                 <span>1</span>
                 <button aria-label="Increase quantity">+</button>
-              </div>
-              <button className="bg-primary text-white px-6 py-2 rounded hover:bg-opacity-90">
-                Add To Cart
+              </div> 
+              <Link href={'/viewcart'}>
+             <button className="bg-primary text-black px-6 py-2 rounded hover:bg-opacity-90">
+               Add to Cart
               </button>
+              </Link>
             </div>
 
             <hr className="my-6" />
@@ -162,7 +164,7 @@ function AsgaardSofa() {
         <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-6">
           {[
             {
-              src: "/hero3.jpeg",
+              src: "/cha4.JPG",
               name: "Trenton modular sofa_3",
               price: "Rs. 25,000.00",
             },
@@ -177,7 +179,7 @@ function AsgaardSofa() {
               price: "Rs. 25,000.00",
             },
             {
-              src: "/hero6.jpeg",
+              src: "/cha2.jpeg",
               name: "Plain console with teak",
               price: "Rs. 25,000.00",
             },

@@ -10,12 +10,12 @@ function Contact() {
     return (
         <div className="max-w-screen-xl container mx-auto pb-8 px-4">
              <div className='bg-[#faf4f4]'>
-                <Header />
+                {/* <Header /> */}
             </div>
             {/* Banner Section */}
             <div className="relative text-black">
                 <Image
-                    src="/contact2.webp" // Replace with the correct image file path
+                    src="/cha17.webp" // Replace with the correct image file path
                     alt="Shop Banner"
                     height={400}
                     width={1600}

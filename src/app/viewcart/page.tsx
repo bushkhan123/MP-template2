@@ -9,12 +9,12 @@ function ViewCart() {
     return (
         <div className="max-w-screen-2xl container mx-auto pb-8 px-4">
             <div className='bg-[#faf4f4]'>
-                <Header />
+                {/* <Header /> */}
             </div>
             {/* Banner Section */}
             <div className="relative text-black">
                 <Image
-                    src="/shop.jpeg" // Replace with the correct image file path
+                    src="/cha6.jpg" // Replace with the correct image file path
                     alt="Shop Banner"
                     height={400}
                     width={1600}
@@ -51,7 +51,7 @@ function ViewCart() {
             <tr className="border-t">
                 <td className="flex flex-col md:flex-row items-center py-4">
                     <Image
-                        src='/shop14.jpeg'
+                        src='/asgar.avif'
                         height={120}
                         width={120}
                         alt="Asgaard Sofa"
@@ -70,9 +70,6 @@ function ViewCart() {
         </tbody>
     </table>
 </div>
-
-
-
                 {/* Cart Totals Section */}
                 <div className="w-full lg:w-2/6 bg-[#FFF9E5] rounded-md p-10 mt-8 lg:mt-0">
                     <h2 className="text-2xl font-semibold mb-4 text-center">Cart Totals</h2>
@@ -90,9 +87,11 @@ function ViewCart() {
                             </tr>
                             <tr>
                                 <td colSpan={2} className="py-4">
+                                    <Link href={'/checkout'}>
                                     <button className="w-full px-6 py-3 border border-black rounded-xl" >
                                         Checkout
-                                    </button>
+                                    </button></Link>
+                                    
                                 </td>
                             </tr>
                         </tbody>
